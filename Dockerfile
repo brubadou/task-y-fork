@@ -14,7 +14,7 @@ COPY --from=build  /go/src/tasky/tasky .
 COPY --from=build  /go/src/tasky/assets ./assets
 
 # Add the arbitrary file "wizexercise.txt"
-RUN echo "This is the content of wizexercise.txt" > wizexercise.txt
+RUN echo "Cover your eyes please. This is super secret text!" > wizexercise.txt
 
 EXPOSE 8080
 ENTRYPOINT ["/app/tasky"]
